@@ -1,0 +1,306 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*_______________________________________________*/
+
+body{
+    display: flex;
+    justify-content: center;
+    background: #f1f5f9;
+    background-image: url(../imagenes/mountains.png);
+}
+.container{
+    margin: 55px;
+    width: 80%;
+    height: 450px;
+    box-shadow: 0 2px 5px 0 rgba(71, 69, 69, 0.5);
+    border-radius: 15px;
+    background: #fff;
+}
+
+.container .decripcion{
+    width: 39%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #c5c2c2;
+    /*background: #9c7cee;
+    background: rgb(17,220,224);
+    background: linear-gradient(0deg, rgba(17,220,224,1) 22%, rgba(69,88,221,1) 93%);
+    background: rgb(89,17,224);
+    background: linear-gradient(0deg, rgba(89,17,224,1) 6%, rgba(174,0,255,1) 92%);*/
+    background: rgb(71, 71, 241);
+    border-radius: 15px;
+    border-bottom-right-radius: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-separacion-vertical .line{
+    width: 1px;
+    height: 50%;
+    border-top: solid #ACC0D8 1px;
+}
+
+.container .ingresar-datos{
+    width: 60%;
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .decripcion .decripcion-full{
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.container .decripcion .decripcion-full .decripcion-titulo{
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.container .decripcion .decripcion-full .descripcion-contenido{
+   
+    width: 100%;
+    font-size: 14px;
+}
+
+/*
+.container .decripcion .imagen{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container .decripcion .imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0.6;
+}
+*/
+.container-ingresar-datos{
+    font-size: 14px;
+    width: 70%;
+    height: 90%;
+}
+
+.inicar-con{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+
+.inicar-con div{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.inicar-con span{
+    font-weight: bold;
+}
+
+.facebook, .twitter, .google{
+    width: 35px;
+    height: 35px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.google{
+    background: #EA4335;
+}
+
+.facebook{
+    background: #3b5998;
+}
+
+.twitter{
+    background: #1DA1F2;
+}
+
+
+label{
+    font-weight: bold;
+}
+
+.line-separacion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.line-separacion .or{
+    margin: 0px 20px;
+}
+
+.line-separacion .line{
+    width: 50%;
+    height: 1px;
+    border-top: solid #c5c2c2 1px;
+    
+}
+.iniciar-datos{
+    margin-top: 20px;
+    
+}
+
+.row .datos{
+    outline: none;  
+    width: 95%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border-radius: 15px;
+    border: 1px solid #c5c2c2;
+}
+.row .datos:focus{
+    border: 2px solid rgb(71, 71, 241);;
+}
+.recordar-recuperar-contrasena{
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+}
+
+.recordar-recuperar-contrasena a{
+    text-decoration: none;
+}
+
+.recordar-recuperar-contrasena a:hover{
+    color: rgb(43, 42, 41);
+}
+
+.recordar-recuperar-contrasena, .recordar-recuperar-contrasena a{
+    color: rgb(133, 132, 130);
+}
+.button {
+    margin: 25px 0px;
+    margin-bottom: 35px;
+}
+
+.button .btn{
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 50px;
+    /*background: cornflowerblue;
+    background: rgb(89,17,224);
+    background: linear-gradient(0deg, rgba(89,17,224,1) 6%, rgba(174,0,255,1) 92%);*/
+    background: rgb(71, 71, 241);
+    color: #fff;
+    border-radius: 15px;
+}
+.button .btn:hover{
+    background: rgb(126, 126, 241);;
+    cursor: pointer;
+}
+.registarse a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.registarse a:hover{
+    color: rgb(235, 118, 142);
+    cursor: pointer;
+}
+
+.registarse .font-weight-bold{
+    font-weight: bold;
+}
+/*__________________modal aceptacion terminos y condiciones_____________________________*/
+
+.modal-aceptacion-terminos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .informacion-modal-terminos{
+    width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px 0px;
+      color: rgb(80, 78, 78);
+  }
+  
+  .informacion-modal-terminos .titulo{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(80, 78, 78);
+  } 
+  
+  .informacion-modal-terminos .texto-modal{
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .terminos_aceptacion_msg{
+    font-size: 14px;
+}
+  
+  .informacion-modal-terminos .radio-button{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .botones-modal-acptar-terminos{
+  
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    
+  }
+  
+  .botones-modal-acptar-terminos button{
+    float: right;
+    border: none;
+    outline:none;
+    background: rgb(47, 240, 47);
+    border-radius: 5px;
+    padding: 5px 12px;
+    color: #fff;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .botones-modal-acptar-terminos button:hover{
+  background: rgb(110, 247, 110);
+  }
+  
+  .botones-modal-acptar-terminos .btn-cerrar{
+    background: red;
+  }
+  
+  .botones-modal-acptar-terminos .btn-cerrar:hover{
+    background: rgb(240, 72, 72);
+  }
+  

@@ -1,0 +1,522 @@
+
+
+.nav, .contenedor{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    /*box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 0px;*/
+    margin-bottom: 2px;
+}
+.nav .logo{
+    margin-left: 20px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav .logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.nav .opciones{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.nav .opciones li{
+    list-style: none;
+    /* margin-left: 10px; */
+    padding: 3px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    /*border: 1px solid rgb(107, 101, 101);*/
+
+}
+
+.nav .opciones li a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgb(97, 96, 96);
+}
+.nav .opciones li:hover{
+    /* background: rgb(71, 71, 241); */
+    color: rgb(150, 148, 148);
+}
+/* .nav .opciones li:hover a{
+    color: #fff;
+} */
+
+/*_________Container_____________________*/
+.contenedor{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../imagenes/mountains.png);
+}
+.wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.text-box{
+    width: 60%;
+    padding: 20px 0px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.1em;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    /*background: rgb(133, 75, 224);
+    background: rgb(89,17,224);
+    background: linear-gradient(0deg, rgba(89,17,224,1) 6%, rgba(174,0,255,1) 92%);*/
+    background: rgb(71, 71, 241);
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.hero-btn:hover{
+    border: 1px solid rgb(158, 109, 236);
+    background: rgb(89,17,224);
+    border: 1px solid #fff;
+    /*background: linear-gradient(0deg, rgb(129, 13, 182) 6%, rgb(206, 135, 240) 92%);*/
+    background: rgb(98, 98, 236);
+    color: #fff;
+    text-decoration: none;
+}
+/*titulo seccion 1*/
+.what-do{
+    background-image: url(../imagenes/patron_6.jpg);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #3240da;
+    border-top: 3px solid #3240da;
+    font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; 
+    color: #fff;
+    text-shadow: black 0.2em 0.2em 0.9em;
+    /* 0.1em 0.1em 0.2em; */
+}
+.what-do span{
+    font-size: 70px;
+    font-weight: bold;
+}
+/*seccion 1 EVALUCAION*/
+.evaluacion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.evaluacion .imgen{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.evaluacion .imgen img{
+    width: 400px;
+     height: 400px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     box-shadow: black 0.2em 0.2em 0.6em;
+
+}
+
+.evaluacion .info-evaluacion{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: #3240da; */
+    margin-right: 60px;
+}
+
+.evaluacion .info-evaluacion .titulo{
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+.steps{
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+     height: 35px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: linear-gradient(0deg, rgba(89,17,224,1) 6%, rgba(174,0,255,1) 92%);
+     color: #fff;
+}
+
+.steps span{
+    font-size: 20px;
+}
+
+.evaluacion .info-evaluacion .informacion{
+    font-size: 19px;
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    
+    font-family: Cambria,Georgia,serif; 
+}
+/*seccion 2 REPORTE*/
+.reportes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(238, 236, 236);
+    background: #f1f5f9;
+    height: 500px;
+}
+
+.reportes .imgen{
+    width: 45%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reportes .imgen img{
+    width: 400px;
+     height: 400px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     box-shadow: black 0.2em 0.2em 0.6em;
+}
+
+.reportes .info-reportes{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reportes .info-reportes .titulo{
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reportes .info-reportes .informacion{
+    font-size: 19px;
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    
+    font-family: Cambria,Georgia,serif;
+}
+/*seccion 2 QUE EVALUAMOS*/
+.what-evaluate{
+    /* margin-top: 20px; */
+    background-image: url(../imagenes/patron_5.jpg);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #3240da;
+    border-top: 3px solid #3240da;  
+    font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; 
+    color: rgb(252, 248, 248);
+    text-shadow: black 0.2em 0.2em 0.2em;
+    text-shadow: black 0.2em 0.2em 0.9em;
+}
+.what-evaluate span{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* _____________Link CARD: https://www.youtube.com/watch?v=5DEq5cWNYt8&t=185s__________- */
+.dimensiones-info{
+    /* background: #3240da; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.cards-dimensiones{
+    font-family: sans-serif;
+    
+    max-width: 37ch;
+    height: 47ch;
+    color: #fff;
+    padding: 10rem 0 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.car-social{
+    background-image: url(../imagenes/social.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-ambiental{
+    background-image: url(../imagenes/ambiental.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cards-dimensiones:hover,
+.cards-dimensiones:focus-within{
+    transform: scale(1.05);
+
+}
+
+.card-titulo{
+    position: relative;
+    width: max-content;
+}
+
+.card-cuerpo{
+    color: rgb(219, 216, 216);
+}
+
+.card-titulo::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    background: #3240da;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.cards-dimensiones:hover .card-titulo::after,
+.cards-dimensiones:focus-within .card-titulo::after{
+    transform: scaleX(1);
+}
+
+.card-contenido{
+    padding: 1.5rem;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 0.2) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(66%);
+    transition: transform 500ms ease;
+}
+
+.cards-dimensiones:hover .card-contenido,
+.cards-dimensiones:focus-within .card-contenido{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.cards-dimensiones:focus-within .card-contenido{
+    transition-duration: 0ms;
+}
+
+.card-contenido > *:not(.card-titulo){
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.cards-dimensiones:hover .card-contenido >*:not(.card-titulo),
+.cards-dimensiones:focus-within .card-contenido >*:not(.card-titulo){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+/*SOCIAL*/
+.dim-social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dim-social .imgen{
+    width: 45%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dim-social .imgen img{
+    width: 300px;
+     height: 300px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+}
+
+.dim-social .info-dim-social{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dim-social .info-dim-social .titulo{
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+}
+
+.dim-social .info-dim-social .informacion{
+    font-size: 19px;
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*AMbinetal*/
+.dim-ambiental{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(238, 236, 236);
+    background: #f1f5f9;
+}
+
+.dim-ambiental .imgen{
+    width: 45%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dim-ambiental .imgen img{
+    width: 300px;
+     height: 300px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+}
+
+.dim-ambiental .info-dim-ambiental{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dim-ambiental .info-dim-ambiental .titulo{
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+        
+}
+
+
+
+.dim-ambiental .info-dim-ambiental .informacion{
+    font-size: 10px;
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Footer*/
+.foter{
+    margin-top: 20px;
+   height: 90px;
+    color: #fff;
+    background-color: #1A237E;
+    /*background: rgb(89,17,224);
+    background: linear-gradient(0deg, rgba(89,17,224,1) 6%, rgba(174,0,255,1) 92%);*/
+    background: rgb(71, 71, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foter .copy-right{
+    margin-left: 20px;
+}
+
+.foter .iconos{
+    margin-right: 20px;
+}
+
+.foter .iconos i{
+    margin-left: 10px;
+}
+
+/*________ scroll bar INICIO __________*/
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(172, 169, 169); 
+    border-radius: 10px;
+  }
+ /*________ scroll bar FIN __________*/
